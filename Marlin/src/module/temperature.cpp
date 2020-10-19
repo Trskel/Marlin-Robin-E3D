@@ -777,7 +777,7 @@ inline void loud_kill(PGM_P const lcd_msg, const heater_id_t heater_id) {
       WRITE(BEEPER_PIN, HIGH); delay(25);
       WRITE(BEEPER_PIN, LOW); delay(80);
     }
-    WRITE(BEEPER_PIN, HIGH);
+    WRITE(BEEPER_PIN, LOW);
   #endif
   kill(lcd_msg, HEATER_PSTR(heater_id));
 }
